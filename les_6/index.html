@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Практическое задание 6</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        Продолжаем реализовывать модуль корзины: <br>
+        a. Добавлять в объект корзины выбранные товары по клику на кнопке «Купить» без перезагрузки страницы; <br>
+        b. Привязать к событию покупки товара пересчет корзины и обновление ее внешнего вида. <br>
+    </div>
+    <form>
+        <div class="product-group">
+            <div id="catalog" class="product-item"> Состав корзины: - </div>
+            <div id="cart" class="product-item"> Итого </div>
+        </div>
+        <div class="product-group">
+            <img class="product-photo product-item" src="pics/LadaGranta.jpg" alt="">
+            <div id="product_1" class="product-description product-item">
+                <div class="name">LADA Granta</div>
+                <div class="price">587900</div>
+                <div class="unit">руб.</div>
+            </div>
+            <div class="product-item">
+                <input class="prod_change" type="button" value="-" name="product_1" />
+                <input class="product_1" type="text" size="10" value="0" />
+                <input class="prod_change" type="button" value="+" name="product_1" />
+                <input class="prod_buy" type="button" value="Купить" name="product_1" />
+            </div>
+        </div>
+        <div class="product-group">
+            <img class="product-photo product-item" src="pics/KIARio.png" alt="">
+            <div id="product_2" class="product-description product-item">
+                <div class="name">KIA Rio</div>
+                <div class="price">984900</div>
+                <div class="unit">руб.</div>
+            </div>
+            <div class="product-item">
+                <input class="prod_change" type="button" value="-" name="product_2" />
+                <input class="product_2" type="text" size="10" value="0" />
+                <input class="prod_change" type="button" value="+" name="product_2" />
+                <input class="prod_buy" type="button" value="Купить" name="product_2" />
+            </div>
+        </div>
+        <div class="product-group">
+            <img class="product-photo product-item" src="pics/HyundaiCreta.jpg" alt="">
+            <div id="product_3" class="product-description product-item">
+                <div class="name">Hyundai Creta</div>
+                <div class="price">1239000</div>
+                <div class="unit">руб.</div>
+            </div>
+            <div class="product-item">
+                <input class="prod_change" type="button" value="-" name="product_3" />
+                <input class="product_3" type="text" size="10" value="0" />
+                <input class="prod_change" type="button" value="+" name="product_3" />
+                <input class="prod_buy" type="button" value="Купить" name="product_3" />
+            </div>
+        </div>
+        <div class="product-group">
+            <img class="product-photo product-item" src="pics/SkodaRapid.jpg" alt="">
+            <div id="product_4" class="product-description product-item">
+                <div class="name">Skoda Rapid</div>
+                <div class="price">1020000</div>
+                <div class="unit">руб.</div>
+            </div>
+            <div class="product-item">
+                <input class="prod_change" type="button" value="-" name="product_4" />
+                <input class="product_4" type="text" size="10" value="0" />
+                <input class="prod_change" type="button" value="+" name="product_4" />
+                <input class="prod_buy" type="button" value="Купить" name="product_4" />
+            </div>
+        </div>
+    </form>
+    <script src="les_6_task_1.js"></script>
+</body>
+
+</html>
